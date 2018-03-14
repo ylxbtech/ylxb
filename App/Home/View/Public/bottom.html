@@ -1,0 +1,41 @@
+
+<a href="#0" class="cd-top">Top</a>
+
+<div id="bottom">
+    <div class="bottomnr clearfix">
+        <div class="bottom1">
+            <h4>我很支持他们</h4>
+            <div style="cursor: pointer" class="link">
+                <volist name="links" id="links">
+                    <a href="{$links.url}" target="_blank" title="{$links.desc}">{$links.title}</a>
+                </volist>
+
+
+            </div>
+            <h4>反馈邮箱：</h4>
+            <p><a href="mailto:bug@ylxb.tech" title="点击发送反馈邮件">bug@ylxb.tech</a></p>
+        </div>
+
+        <div class="bottom2">
+            <h4>关于本站</h4>
+            <p>Copyright © 2018 ylxb. All rights reserved.</p>
+            <p>蜀ICP备16036346号&emsp;&emsp;Versions 1.0.1</p>
+            <h4>注释</h4>
+            <p>ylxb寓意一路相伴，开头的yl是我名字的拼音首字母，xb的意思不可言传只可体会，域名以.tech结尾，主要是做PHP开发的所以选了这个技术的域名</p>
+            <br>
+            <p><b>推荐：</b>使用PC端Chrome浏览器，分辨率在1440×900-1920×1080访问最佳</p>
+        </div>
+
+    </div>
+
+</div>
+
+<script type="application/javascript">
+    $(function () {
+        $('.dhxx ul a').click(function () {
+            alert('测试');
+        })
+    });
+</script>
+
+</html>

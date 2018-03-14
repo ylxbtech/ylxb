@@ -1,0 +1,978 @@
+[ 2018-03-09T10:11:28+08:00 ] ::1 /yl_blog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.018566s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.026701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.026791s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.0734s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort asc  [ RunTime:0.0077s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0054s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `blog_article` ORDER BY time desc LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `blog_banner` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `blog_banner` ORDER BY sort asc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001571s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001670s ]
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.326064s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.326173s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.014443s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014527s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.019762s ]
+INFO: [ app_end ] --END-- [ RunTime:0.019890s ]
+
+[ 2018-03-09T10:11:37+08:00 ] ::1 /yl_blog/index.php/Home/Cate/index/id/31
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000685s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort asc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort asc  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `blog_article` ORDER BY time desc LIMIT 0,10   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `blog_banner` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `blog_banner` ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE `cateid` = 31 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `blog_article` WHERE `cateid` = 31 ORDER BY time desc LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084685s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084799s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000652s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000719s ]
+
+[ 2018-03-09T10:11:38+08:00 ] ::1 /yl_blog/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000867s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000587s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `blog_article` ORDER BY time desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_banner` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `blog_banner` ORDER BY sort asc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000222s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000310s ]
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.102329s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102417s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000707s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000772s ]
+
+[ 2018-03-09T10:11:39+08:00 ] ::1 /yl_blog/index.php/Home/Cate/index/id/31
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_article` ORDER BY time desc LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_banner` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `blog_banner` ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE `cateid` = 31 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_article` WHERE `cateid` = 31 ORDER BY time desc LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012026s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000581s ]
+
+[ 2018-03-09T10:11:42+08:00 ] ::1 /yl_blog/index.php/Home/Cate/index/id/35
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000803s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort asc  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `blog_article` ORDER BY time desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_banner` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `blog_banner` ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE `cateid` = 35 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `blog_article` WHERE `cateid` = 35 ORDER BY time desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000260s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015475s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015568s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000864s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000936s ]
+
+[ 2018-03-09T10:11:45+08:00 ] ::1 /yl_blog/index.php/Home/Cate/index/id/36
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000869s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_article` ORDER BY time desc LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `blog_banner` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `blog_banner` ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE `cateid` = 36 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_article` WHERE `cateid` = 36 ORDER BY time desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000339s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015465s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015567s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000423s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000714s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000785s ]
+
+[ 2018-03-09T10:11:47+08:00 ] ::1 /yl_blog/index.php/Home/Cate/index/id/37
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000773s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_article` ORDER BY time desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_banner` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `blog_banner` ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE `cateid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `blog_article` WHERE `cateid` = 37 ORDER BY time desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014396s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014477s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000547s ]
+
+[ 2018-03-09T10:11:49+08:00 ] ::1 /yl_blog/index.php/Home/Cate/index/id/38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000548s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_article` ORDER BY time desc LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_banner` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `blog_banner` ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE `cateid` = 38 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_article` WHERE `cateid` = 38 ORDER BY time desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000280s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018632s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018717s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000490s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000540s ]
+
+[ 2018-03-09T10:11:51+08:00 ] ::1 /yl_blog/index.php/Home/Cate/index/id/37
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000831s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_article` ORDER BY time desc LIMIT 0,10   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `blog_banner` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `blog_banner` ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE `cateid` = 37 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `blog_article` WHERE `cateid` = 37 ORDER BY time desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013807s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013870s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000531s ]
+
+[ 2018-03-09T10:11:53+08:00 ] ::1 /yl_blog/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000565s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_article` ORDER BY time desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_banner` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `blog_banner` ORDER BY sort asc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088917s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088983s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000729s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000813s ]
+
+[ 2018-03-09T10:19:44+08:00 ] ::1 /yl_blog/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005771s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001464s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.0231s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort asc  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort asc  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.0033s ]
+SQL: SELECT * FROM `blog_article` ORDER BY time desc LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `blog_banner` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `blog_banner` ORDER BY sort asc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001675s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001820s ]
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.225579s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.225710s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001025s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001745s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001861s ]
+
+[ 2018-03-09T10:22:57+08:00 ] ::1 /yl_blog/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.029311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.029452s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.0417s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort asc  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort asc  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0042s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT * FROM `blog_article` ORDER BY time desc LIMIT 0,10   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `blog_banner` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `blog_banner` ORDER BY sort asc  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001598s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001711s ]
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.345406s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.345496s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.020275s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.020463s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004896s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004996s ]
+
+[ 2018-03-09T10:24:40+08:00 ] ::1 /yl_blog/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000684s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000813s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort asc  [ RunTime:0.0119s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort asc  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.0055s ]
+SQL: SELECT * FROM `blog_article` ORDER BY time desc LIMIT 0,10   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `blog_banner` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_banner` ORDER BY sort asc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000576s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000673s ]
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.171991s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.172073s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000823s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001433s ]
+
+[ 2018-03-09T10:33:12+08:00 ] ::1 /yl_blog/index.php/Home/Cate/index/id/38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001736s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001434s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort asc  [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort asc  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_article` ORDER BY time desc LIMIT 0,10   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `blog_banner` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `blog_banner` ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE `cateid` = 38 LIMIT 1   [ RunTime:0.0067s ]
+SQL: SELECT * FROM `blog_article` WHERE `cateid` = 38 ORDER BY time desc LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000215s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000320s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.114131s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.114267s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000881s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001141s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001238s ]
+
+[ 2018-03-09T10:33:19+08:00 ] ::1 /yl_blog/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000796s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001050s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort asc  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `blog_article` ORDER BY time desc LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_banner` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `blog_banner` ORDER BY sort asc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000232s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000329s ]
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.134985s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.135050s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001125s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001219s ]
+
+[ 2018-03-09T10:34:05+08:00 ] ::1 /yl_blog/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001105s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort asc  [ RunTime:0.0221s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort asc  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.0098s ]
+SQL: SELECT * FROM `blog_article` ORDER BY time desc LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `blog_banner` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `blog_banner` ORDER BY sort asc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000764s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000834s ]
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.153104s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.153161s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000687s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001225s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001321s ]
+
+[ 2018-03-09T10:34:09+08:00 ] ::1 /yl_blog/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort asc  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_article` ORDER BY time desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_banner` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `blog_banner` ORDER BY sort asc  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000263s ]
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071896s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000610s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000677s ]
+
+[ 2018-03-09T10:34:17+08:00 ] ::1 /yl_blog/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort asc  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_article` ORDER BY time desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_banner` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_banner` ORDER BY sort asc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000220s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000296s ]
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083082s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083130s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000694s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000758s ]
+
+[ 2018-03-09T10:40:34+08:00 ] ::1 /yl_blog/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000915s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002027s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort asc  [ RunTime:0.0122s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort asc  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.0054s ]
+SQL: SELECT * FROM `blog_article` ORDER BY time desc LIMIT 0,10   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `blog_banner` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `blog_banner` ORDER BY sort asc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000526s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000594s ]
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.097332s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.097393s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001290s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001396s ]
+
+[ 2018-03-09T11:02:31+08:00 ] ::1 /yl_blog/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001167s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000996s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001062s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.0568s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort asc  [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort asc  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.0039s ]
+SQL: SELECT * FROM `blog_article` ORDER BY time desc LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `blog_banner` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `blog_banner` ORDER BY sort asc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001628s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001701s ]
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.199640s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.199704s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.013141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001203s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001289s ]
+
+[ 2018-03-09T11:20:54+08:00 ] ::1 /yl_blog/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.023000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001166s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001253s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.0534s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort asc  [ RunTime:0.0051s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort asc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `blog_article` ORDER BY time desc LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `blog_banner` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_banner` ORDER BY sort asc  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001829s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001895s ]
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.178544s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.178629s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001565s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001659s ]
+
+[ 2018-03-09T11:21:00+08:00 ] ::1 /yl_blog/index.php/Home/Cate/index/id/31
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000894s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001177s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort asc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_article` ORDER BY time desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_banner` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `blog_banner` ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE `cateid` = 31 LIMIT 1   [ RunTime:0.0054s ]
+SQL: SELECT * FROM `blog_article` WHERE `cateid` = 31 ORDER BY time desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016311s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016380s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000591s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000755s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000799s ]
+
+[ 2018-03-09T11:21:04+08:00 ] ::1 /yl_blog/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000791s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_article` ORDER BY time desc LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_banner` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `blog_banner` ORDER BY sort asc  [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000277s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000418s ]
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071592s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071679s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000711s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000788s ]
+
+[ 2018-03-09T11:21:07+08:00 ] ::1 /yl_blog/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000568s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_article` ORDER BY time desc LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_banner` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_banner` ORDER BY sort asc  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000173s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.080086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.080169s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000718s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000797s ]
+
+[ 2018-03-09T11:21:12+08:00 ] ::1 /yl_blog/index.php/Home/Cate/index/id/38
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000938s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000877s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort asc  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_article` ORDER BY time desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_banner` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `blog_banner` ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE `cateid` = 38 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_article` WHERE `cateid` = 38 ORDER BY time desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011578s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011636s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000420s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000459s ]
+
+[ 2018-03-09T11:21:13+08:00 ] ::1 /yl_blog/index.php/Home/Cate/index/id/37
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000833s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort asc  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_article` ORDER BY time desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_banner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_banner` ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE `cateid` = 37 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_article` WHERE `cateid` = 37 ORDER BY time desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012557s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012637s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000557s ]
+
+[ 2018-03-09T11:21:14+08:00 ] ::1 /yl_blog/index.php/Home/Cate/index/id/36
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000766s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `blog_article` ORDER BY time desc LIMIT 0,10   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `blog_banner` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `blog_banner` ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE `cateid` = 36 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `blog_article` WHERE `cateid` = 36 ORDER BY time desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016943s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000775s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000833s ]
+
+[ 2018-03-09T11:21:14+08:00 ] ::1 /yl_blog/index.php/Home/Cate/index/id/35
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000788s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_article` ORDER BY time desc LIMIT 0,10   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `blog_banner` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_banner` ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE `cateid` = 35 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `blog_article` WHERE `cateid` = 35 ORDER BY time desc LIMIT 0,10   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014693s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014781s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000456s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000497s ]
+
+[ 2018-03-09T11:21:14+08:00 ] ::1 /yl_blog/index.php/Home/Cate/index/id/31
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort asc  [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `blog_article` ORDER BY time desc LIMIT 0,10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `blog_banner` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `blog_banner` ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE `cateid` = 31 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_article` WHERE `cateid` = 31 ORDER BY time desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000295s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014634s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000433s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000472s ]
+
+[ 2018-03-09T11:21:15+08:00 ] ::1 /yl_blog/index.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000815s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_article` ORDER BY time desc LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `blog_banner` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `blog_banner` ORDER BY sort asc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094648s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.094717s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000674s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000744s ]
+
+[ 2018-03-09T11:21:18+08:00 ] ::1 /yl_blog/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `blog_cate` ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `blog_link` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `blog_link` ORDER BY sort asc  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `blog_article` ORDER BY time desc LIMIT 0,10   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `blog_banner` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_banner` ORDER BY sort asc  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000246s ]
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+NOTIC: [8] Undefined index: catename D:\AppServ\www\yl_blog\App\Runtime\Cache\Home\00e52909bed743ea261af4b6823297ff.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075080s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075147s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000240s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000696s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000769s ]
+

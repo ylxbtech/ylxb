@@ -1,0 +1,41 @@
+<!--head-->
+<include file="Public/head" />
+
+<head>
+    <title>YLXB-{$article.title}</title>
+</head>
+
+<body>
+
+<div id="contentbox">
+    <div class="content clearfix">
+        <div class="newArticle clearfix" style="max-width: 1138px;padding: 40px">
+
+            <p style="font-size: 30px;text-align: center;">{$article.title}</p>
+            <p style="text-align: center;margin-top: 10px;margin-bottom: 10px"><span>所属分类：{$catename}</span>&emsp;<span>最后修改时间：{$article.time|date='Y-m-d H:i:s',###}</span></p>
+
+                <!--{$article.content}-->
+                <?php echo htmlspecialchars_decode($article['content']) ?>
+            <p style="margin-top: 10px">
+            <p>封面图片：</p>
+                <img src="__ROOT__/{$article.pic}" style="max-width: 1180px">
+            </p>
+        </div>
+	
+<!--PC和WAP自适应版-->
+<script type="text/javascript"> 
+(function(){ 
+var appid = 'cytvLdhfx'; 
+var conf = 'prod_7d16ff36c27bf8e8b2ea4a10b8efe6f2'; 
+var width = window.innerWidth || document.documentElement.clientWidth; 
+if (width < 960) { 
+window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>
+
+    </div>
+</div>
+
+
+
+</body>
+<!--bottom-->
+<include file="Public/bottom" />

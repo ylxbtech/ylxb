@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+    /*background-image: url("../img/login-img.jpg");*/
+    background-color: #f1f1f1;
+    width: auto;
+    height: auto;
+    background-size: 1920px;
+    transition: all .9s;
+}
+
+
+.login_box{
+    width: 100%;
+    min-width:450px;
+    height: 774px;
+    padding-top: 100px;
+}
+
+.login{
+    width: 450px;
+    min-width: 450px;
+    height: 640px;
+    border: 1px solid #dadada;
+    background-color: white;
+    margin: 0 auto;
+    box-shadow: 0 9px 30px -6px rgba(0,0,0,.2);
+}
+
+.dltx{
+    width: 450px;
+    height: 150px;
+    background-image: url(../img/logo.png);
+    background-size: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all .9s;
+}
+.dlwz{
+    width: 450px;
+    height: 400px;
+}
+
+.dlbd{
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+}
+.yzmtp{
+    cursor: pointer;
+}
+
+
+/*忘记密码*/
+.forgetpwd{
+    margin-top: 90px;
+    transition: all .9s;
+}
+.forgetpwd a{
+    color:#606060;
+    transition: color .3s;
+    cursor: pointer;
+}
+.forgetpwd a:hover{
+    color:#0B90EF;
+    transition: color .3s;
+}
+
+
+.dlbd div{
+    width: 400px;
+    height: 50px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/*记住我*/
+.RememberMe{
+    width: 20px;
+    height: 20px;
+}
+
+#dlan{
+    width: 370px;
+    height: 54px;
+    background-color:#569EFF;
+    color: white;
+    padding-left: 0;
+    cursor: pointer;
+    font-size: 18px;
+    padding-right: 0;
+    border: none;
+    transition: all .9s;
+}
+#dlan:hover{
+    background-color: rgba(86, 158, 255, 0.51);
+    border: 1px solid #DDD;
+    transition: all .9s;
+
+}
+.dlbd div input{
+    width: 350px;
+    height: 50px;
+    border: 1px solid #dadada;
+    font-size: 16px;
+    padding-left: 20px;
+    transition: all .9s;
+}
+.dlbd div input:hover{
+    border: 1px solid #222;
+    transition: all .9s;
+}
+.backhome{
+    text-decoration: none;
+    color: black;
+}
+
+

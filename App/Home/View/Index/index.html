@@ -1,0 +1,96 @@
+
+
+
+
+
+
+<!--head-->
+<include file="Public/head" />
+
+
+<head>
+    <title>一路相伴</title>
+</head>
+
+<body>
+
+<div id="contentbox">
+    <div class="content clearfix">
+        <!-- 3D banner -->
+        <section class="tplbwz">
+            <div class="cover">
+                <div class="div_a">
+                    <ul id="banner">
+                        <div id="stra">
+                            <volist name="picList" id="banner">
+                                <li><a href="{$banner.url}" target="_blank" style="width:1220px;height:450px;background:url('__ROOT__/{$banner.pic}') no-repeat; display:block;"></a></li>
+
+                            </volist>
+
+                        </div>
+
+                    </ul>
+                    <div class="btn">
+                        <span class="hover"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  3D banner end -->
+
+        <!--科普 改为内容-->
+        <div class="newArticle clearfix">
+            <p class="newArticle_bt">最新文章&消息(不定期更新)</p>
+            <ul class="newArticle_list">
+
+                <volist name="list" id="new">
+                    <a href="__MODULE__/Article/index/id/{$new.id}" target="_blank">
+                        <li style="padding-right: 20px" class="ui-box forwardBorderTrain">
+                            <img src="__ROOT__/{$new.pic}" width="300px" height="200px" style="margin-left: 20px;float: left;margin-right: 50px">
+                            <h2>{$new.title}</h2>
+                            <p>最后修改时间：{$new.time|date='Y-m-d H:i:s',###} &emsp; <!--所属栏目：{$list.catename}--></p>
+                            <h3>{$new.desc}</h3>
+                        </li>
+                    </a>
+                </volist>
+                <!--分页-->
+                <div class="list-page">{$page}</div>
+
+
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+
+
+<!--banner 3D-->
+<script>
+    var origin = {
+        X: document.body.clientWidth / 2,
+        Y: document.body.clientHeight / 8
+    };
+    var o = document.querySelector('.cover');
+    document.querySelector('section').onmouseover=function(){
+        document.querySelector('section').addEventListener('mousemove', function (e) {
+            var rotate = {x: 1 - e.pageY / origin.Y, y: e.pageX / origin.X - 1};
+            var transform = "rotateX(" + rotate.x *10 + "deg) rotateY(" + rotate.y * 10 + "deg)";
+            o.style.transform = transform;
+            o.style.boxShadow = -parseInt(rotate.y * 20) + 'px '+ parseInt(rotate.x * 20+20)+ 'px ' + '400px #333';
+        });
+    };
+    document.querySelector('section').onmouseout=function(){
+        o.style.transform ="rotateX(0deg) rotateY(0deg)";
+        o.style.boxShadow ='0px 0px';
+    }
+
+</script>
+
+</body>
+
+<!--bottom-->
+<include file="Public/bottom" />

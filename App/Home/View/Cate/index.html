@@ -1,0 +1,42 @@
+<!--head-->
+<include file="Public/head" />
+
+
+<head>
+    <title>YLXB-Column</title>
+</head>
+
+<body>
+
+
+<div id="contentbox">
+    <div class="content clearfix">
+        <!--科普 改为内容-->
+        <div class="newArticle clearfix">
+            <p class="newArticle_bt">最新文章(不定期更新)</p>
+            <ul class="newArticle_list">
+
+                <volist name="list" id="list">
+                    <a href="__MODULE__/Article/index/id/{$list.id}">
+                        <li class="ui-box forwardBorderTrain">
+                            <img src="__ROOT__/{$list.pic}" width="300px" height="200px" style="margin-left: 20px;float: left;margin-right: 50px">
+                            <h2>{$list.title}</h2>
+                            <p>最后修改时间：{$list.time|date='Y-m-d H:i:s',###}</p>
+                            <h3>{$list.desc}</h3>
+                        </li>
+                    </a>
+                </volist>
+                <!--分页-->
+                <div class="list-page">{$page}</div>
+
+
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+<!--bottom-->
+<include file="Public/bottom" />

@@ -1,0 +1,68 @@
+<!--head-->
+<include file="Public/head" />
+<!--menu-->
+<include file="Public/menu" />
+
+
+<div class="container clearfix">
+    <!--/sidebar-->
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="{:U('Index/index')}">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">链接管理</span></div>
+        </div>
+
+        <div class="result-wrap">
+            <form name="myform" id="myform" method="post" action="{:U('Link/sort')}">
+                <div class="result-title">
+                    <div class="result-list">
+                        <a href="{:U('Link/add')}"><i class="icon-font"></i>新增链接</a>
+                        <!--<a id="batchDel" href="javascript:void(0)"><i class="icon-font"></i>批量删除</a>-->
+                        <a id="updateOrd" href="javascript:void(0)"><i class="icon-font"></i><input type="submit" value="更新排序"></a>
+                    </div>
+                </div>
+                <div class="result-content">
+                    <table class="result-tab" width="100%">
+                        <tr>
+                            <th class="tc" width="5%"><input class="allChoose" name="" type="checkbox"></th>
+                            <th>排序</th>
+                            <th>ID</th>
+                            <th>标题</th>
+                            <th>链接</th>
+                            <th>描述</th>
+                            <th>操作</th>
+                        </tr>
+
+                        <volist name="list" id="rows">
+                                <tr>
+                                    <td class="tc">
+                                        <input name="id" value="{$rows.id}" type="checkbox">
+                                    </td>
+                                    <!--<td class="tc"><input name="id[]" value="{$rows.id}" type="checkbox"></td>-->
+                                    <td>
+                                        <!--<input name="ids[]" value="{$rows.id}" type="hidden">-->
+                                        <input class="common-input sort-input" name="{$rows.id}" value= "{$rows.sort}" type="text">
+                                    </td>
+                                    <td>{$rows.id}</td>
+                                    <td title=""><a target="_blank" href="{$rows.url}" title="标题">{$rows.title}</a></td>
+                                    <td title=""><a target="_blank" href="{$rows.url}" title="链接">{$rows.url}</a></td>
+                                    <td title=""><a target="_blank" title="描述">{$rows.desc}</a></td>
+                                    <td>
+                                        <a class="link-update" href="__CONTROLLER__/edit/id/{$rows.id}">修改</a>
+                                        <a class="link-del" onclick="return confirm('确认删除？')" href="__CONTROLLER__/del/id/{$rows.id}">删除</a>
+                                    </td>
+                                </tr>
+
+
+                        </volist>
+                    </table>
+                    <div class="list-page">{$page}</div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>

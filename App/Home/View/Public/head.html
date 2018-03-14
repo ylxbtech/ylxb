@@ -1,0 +1,49 @@
+<!--©ylxb.tech      QQ：1831405008
+─────────▄──────────────▄
+────────▌▒█───────────▄▀▒▌
+────────▌▒▒▀▄───────▄▀▒▒▒▐
+───────▐▄▀▒▒▀▀▀▀▄▄▄▀▒▒▒▒▒▐
+─────▄▄▀▒▒▒▒▒▒▒▒▒▒▒█▒▒▄█▒▐
+───▄▀▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▀██▀▒▌
+──▐▒▒▒▄▄▄▒▒▒▒▒▒▒▒▒▒▒▒▒▀▄▒▒▌
+──▌▒▒▐▄█▀▒▒▒▒▄▀█▄▒▒▒▒▒▒▒█▒▐
+─▐▒▒▒▒▒▒▒▒▒▒▒▌██▀▒▒▒▒▒▒▒▒▀▄▌
+─▌▒▀▄██▄▒▒▒▒▒▒▒▒▒▒▒░░░░▒▒▒▒▌
+─▌▀▐▄█▄█▌▄▒▀▒▒▒▒▒▒░░░░░░▒▒▒▐
+▐▒▀▐▀▐▀▒▒▄▄▒▄▒▒▒▒▒░░░░░░▒▒▒▒▌
+▐▒▒▒▀▀▄▄▒▒▒▄▒▒▒▒▒▒░░░░░░▒▒▒▐
+─▌▒▒▒▒▒▒▀▀▀▒▒▒▒▒▒▒▒░░░░▒▒▒▒▌
+─▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▐
+──▀▄▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▄▒▒▒▒▌
+────▀▄▒▒▒▒▒▒▒▒▒▒▄▄▄▀▒▒▒▒▄▀
+───▐▀▒▀▄▄▄▄▄▄▀▀▀▒▒▒▒▒▄▄▀
+──▐▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▀▀
+-->
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="__IMG__/ylxb-logo1.png" />
+    <script src="__JS__/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="__CSS__/ys.css" type="text/css">
+    <script type="text/javascript" src="__JS__/ys.js"></script>
+    <script type="text/javascript" src="__JS__/fhdb.js"></script>
+    <link rel="stylesheet" href="__CSS__/animated-border.min.css">
+</head>
+
+
+<!--头部导航条-->
+<div id="headbox">
+    <div class="headcontent clearfix"><a href="{:U('Index/index')}" style="color: white;font-size: 48px;font-family: 'Comic Sans MS';line-height: 50px">
+        <li id="logo"></li></a>
+        <div class="navbox">
+            <ul class="nav">
+                <li><a href="{:U('Index/index')}" class="ui-box top-slideOpposite">首页</a></li>
+                <volist class="nav" name="cateres" id="cate">
+                    <li><a href="__MODULE__/Cate/index/id/{$cate.id}"class="ui-box top-slideOpposite">{$cate.catename}</a></li>
+                </volist>
+                <li><a href="__APP__/Admin/Login/index" class="loginico"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>

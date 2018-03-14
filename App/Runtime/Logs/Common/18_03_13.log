@@ -1,0 +1,18 @@
+[ 2018-03-13T11:14:40+08:00 ] 14.215.176.21 //index.php/module/action/param1/${@print(md5(1))}
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+ERR: 无法加载模块:Module
+
+[ 2018-03-13T11:14:41+08:00 ] 10.139.52.37 //index.php/module/action/param1/test}
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000309s ]
+ERR: 无法加载模块:Module
+
+[ 2018-03-13T21:50:08+08:00 ] ::1 /testylxb/Public/Admin/images/tab-thbg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+ERR: 无法加载模块:Public
+

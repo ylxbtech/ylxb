@@ -1,0 +1,54 @@
+
+<!--head-->
+<include file="Public/head" />
+<!--menu-->
+<include file="Public/menu" />
+
+
+
+<div class="container clearfix">
+    <!--/sidebar-->
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="{:U('Index/index')}">首页</a><span class="crumb-step">&gt;</span><a class="crumb-name" href="{:U('Banner/lis')}">Banner管理</a><span class="crumb-step">&gt;</span><span>修改Banner</span></div>
+        </div>
+        <div class="result-wrap">
+            <div class="result-content">
+                <form action="" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                    <input type="hidden" value="{$links.id}" name="id">
+                    <table class="insert-tab" width="100%">
+                        <tbody>
+                        <tr>
+                            <th><i class="require-red">*</i>URL：</th>
+                            <td>
+                                <input class="common-text required" id="url" name="url" size="50" type="text" placeholder="请输入Banner所指向的Banner">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><i class="require-red">*</i>图片：</th>
+                            <td>
+                                <input type="file" name="banner">
+                                <span>请上传1220×450的Banner图</span>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th></th>
+                            <td>
+                                <input class="btn btn-primary btn6 mr10" value="提交" type="submit">
+                                <a class="btn btn6" href="{:U('Banner/lis')}">返回</a>
+                                <!--<input class="btn btn6" onclick="history.go(-1)" value="返回" type="button">-->
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>
